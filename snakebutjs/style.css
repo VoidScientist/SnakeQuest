@@ -1,0 +1,55 @@
+html, body {
+
+    margin: 0;
+    height: 90vh;
+    overflow: none;
+    font-family: Consolas, Arial, Helvetica, sans-serif;
+
+    color: antiquewhite;
+    background-color: #252550;
+
+}
+
+.page-title {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+
+}
+
+.page-title .title {
+
+    font-size: 2.2rem;
+    margin-bottom: 2vh;
+
+}
+
+.page-title .subtitle {
+
+    font-style: italic;
+
+}
+
+.game-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+
+}
+
+#game {
+
+    border: solid #f4e4e4 1px;
+
+}
+
+#score, #best-score {
+
+    margin: 0;
+    font-size: 1.4rem;
+
+}
