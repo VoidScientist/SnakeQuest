@@ -1,5 +1,7 @@
 class Apple extends GameObject {
 
+    static appleSprite = document.getElementById("applesprite");
+
     constructor(grid, x, y) {
 
         super();
@@ -19,14 +21,11 @@ class Apple extends GameObject {
 
     render(ctx) {
 
-        ctx.fillStyle = "#b54040";
-        ctx.fillRect(
+        ctx.drawImage(
+            Apple.appleSprite,
             this.pos.x * this.grid.tW,
-            this.pos.y * this.grid.tH,
-            this.grid.tW + 1,
-            this.grid.tH + 1
+            this.pos.y * this.grid.tH
         );
-
     }
 
 }
