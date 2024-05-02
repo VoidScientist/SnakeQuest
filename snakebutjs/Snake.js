@@ -12,6 +12,8 @@ class Snake extends GameObject {
         this.snake = [this.spawnPos];
         this.grid = grid;
 
+        this.lastDir = Snake.baseDir;
+
     }
 
     collideWith(other) {
@@ -31,8 +33,8 @@ class Snake extends GameObject {
     changeDir(newDir) {
 
         let dieIfChange = (
-            newDir.x == -this.snakeDir.x &&
-            newDir.y == -this.snakeDir.y &&
+            newDir.x == -this.lastDir.x &&
+            newDir.y == -this.lastDir.y &&
             this.snakeLen > 2
         );
 
@@ -84,6 +86,8 @@ class Snake extends GameObject {
             this.snake = [this.spawnPos];
             this.snakeDir = Snake.baseDir;
         }
+
+        this.lastDir = this.snakeDir;
 
     }
 
