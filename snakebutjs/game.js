@@ -12,7 +12,7 @@ const bgColor = "#252550";
 const tiles = 16;
 
 const framerate = 60;
-const movesPerSecond = 12;
+const movesPerSecond = 10;
 
 let frameSinceMove = 0;
 
